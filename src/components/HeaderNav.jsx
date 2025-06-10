@@ -17,7 +17,7 @@ export function HeaderNav() {
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/projects">
+                        <NavLink className="nav-link" to="/#projects">
                             <span className="nav-title">Projects</span>
                         </NavLink>
                     </li>
