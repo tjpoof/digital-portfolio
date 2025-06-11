@@ -1,0 +1,43 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar {
+  background-color: #141e27 !important;
+  padding: 1rem;
+}
+
+
+.intro-section {
+  background-color: #141e27;
+  color: #ffffff;
+  padding: 1rem;
+  width: 100vw;
+
+  .contact-buttons {
+    color: #bb5c4e;
+  }
+}
+
+
+
+
+.projects-section {
+  .project-card {
+    .btn {
+      background-color: #e56c58 !important;
+      border-color: #e56c58 !important;
+      color: #ffffff !important;
+    }
+  }
+}
+
+.contact-section {
+  .btn {
+    background-color: #e56c58 !important;
+    border-color: #e56c58 !important;
+  }
+}

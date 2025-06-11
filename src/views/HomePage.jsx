@@ -2,17 +2,27 @@
 // at the bottom i can also quickly include my email and a button to send a message
 
 import React from 'react';
+import { ProjectCard } from '../components/ProjectCard.jsx';
 
 
 export function HomePage() {
     return (
-        <div>
-            <h1> Hi, I'm TJ | Software Engineer </h1>
-            <p> short blurb </p>
+        <div className="home-page">
+            <div className="intro-section">
+                <h1> Hi, I'm TJ | Software Engineer </h1>
+                <div className="contact-buttons">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-at-fill"></i>
+                </div>
+                <p> short blurb </p>
+            </div>
+
             <div className="skills-section">
                 <h2> My Skills </h2>
 
                 <div className="image-container">
+                    {/* put a picture of myself here */}
                 </div>
 
                 <div className="skills-badge-list">
@@ -24,6 +34,7 @@ export function HomePage() {
                     <span class="badge bg-dark">Python</span>
                     <span class="badge bg-dark">SQL</span>
                     <span class="badge bg-dark">MongoDB</span>
+                    <span class="badge bg-dark">React</span>
                 </div>
 
                 <div className="short-bio-container">
@@ -32,30 +43,25 @@ export function HomePage() {
                     <a href="/about">Keep reading my bio</a>
                 </div>
             </div>
+
             <div className="projects-section">
                 <h2> Projects </h2>
-
-                <small> (Role in project) </small>
-                <div className="project-content">
-                    <h3> Project X </h3>
-                    <div className="project-skills-badge-list">
-                        <span class="badge bg-dark">C++</span>
-                        <span class="badge bg-dark">Java</span>
-                        <span class="badge bg-dark">JavaScript</span>
-                    </div>
-                    <p> short description of project</p>
-                    <div className="image-container">
-                        {/* ensure there's some form of reactivity to the image, such as a hover effect that adds drop shadow or smth */}
-                    </div>
-                </div>
-
-                <a href="/projects/project-x">View Project</a>
-
-
+                <ProjectCard
+                    projectRole="Lead Developer"
+                    title="Project X"
+                    skills={["C++", "Java", "JavaScript"]}
+                    description="A short description of Project X."
+                    image="/path/to/image.jpg"
+                    link="/projects/project-x"
+                />
             </div>
 
-            <h2> Contact Me! </h2>
-            <p> (contact section) </p>
+            <div className="contact-section">
+                <h2> Contact Me! </h2>
+                <p>tj2002@gmail.com</p>
+                <button className="btn btn-primary">Send Message</button>
+            </div>
+            
         </div>
     )
 }

@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 export function HeaderNav() {
     return (
-        <header id="top-header">
+        <header id="top-header" className="header-nav">
             <nav className="navbar navbar-expand-sm navbar-dark bg-dark container-fluid">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                <ul className="navbar-nav">
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/">
                             <span className="nav-title">Home</span>

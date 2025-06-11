@@ -2,7 +2,7 @@
 
 export function AboutPage() {
     return (
-        <div>
+        <div className="about-page">
             <h1> About Me </h1>
         </div>
     )

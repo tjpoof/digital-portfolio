@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 
-import './styles/App.css'
+import './styles/App.scss'
 
 import { HeaderNav } from './components/HeaderNav.jsx'
 import { FooterNav } from './components/FooterNav.jsx'

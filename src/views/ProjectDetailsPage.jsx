@@ -4,7 +4,7 @@
 
 export function ProjectDetailsPage() {
     return (
-        <div>
+        <div className="project-details-page">
             <h1> Project Details </h1>
         </div>
     )
