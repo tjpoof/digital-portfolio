@@ -3,6 +3,7 @@
   text-align: center;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -14,30 +15,167 @@
 .intro-section {
   background-color: #141e27;
   color: #ffffff;
-  padding: 1rem;
   width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 
-  .contact-buttons {
-    color: #bb5c4e;
+  .intro-text-container {
+    text-align: left;
+    margin: 0 auto;
+    width: 70rem;
+
+    h1 {
+      font-size: 4rem;
+      
+    }
+
+    .contact-buttons {
+      color: #bb5c4e;
+      margin: 1rem 0;
+
+      .bi {
+        font-size: 2rem;
+        margin-right: 1rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 30rem;
+    }
   }
+
 }
 
 
+.body-section {
+  margin: 1rem auto;
+  max-width: 70rem;
+
+  .section-heading-container {
+    display: flex;
+    margin-bottom: 2rem;
+
+    h2 {
+      // font type/color, etc
+      font-weight: bold;
+    }
+  }
+
+  .skills-section {
+    display: flex;
+    margin-bottom: 4.5rem;
+
+    .image-container {
+      padding-right: 2rem;
+
+      .portrait-image {
+        width: 22rem;
+        height: 25rem;
+      }
+    }
+
+    .skills-content-container {
+      display: flex;
+      flex-direction: column;
+
+      .skills-badge-list {
+        text-align: left;
+
+        span {
+          font-size: 1.2rem;
+          margin: 0 0.1rem 1rem;
+          border-radius: 0 !important;
+        }
+
+        margin-bottom: 1.5rem;
+      }
+
+      .short-bio-container {
+        text-align: left;
+
+        p {
+          font-size: 1.2rem;
+        }
+
+        a {
+          color: #e56c58 !important;
+          font-weight: bold;
+          font-size: 1.2rem;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .projects-section {
+    .project-card {
+      text-align: left;
+
+      .project-role-container {
+        display: flex;
+        margin-bottom: 0.5rem;
+
+        small {
+          font-size: 1rem;
+        }
+      }
+
+      .project-info-container {
+        display: flex;
+        margin-bottom: 2.5rem;
+
+        .project-text-container {
+          display: flex;
+          flex-direction: column;
+
+          .project-skills-badge-list {
+            span {
+              font-size: 0.8rem;
+              margin: 0 0.1rem 1rem;
+              border-radius: 0 !important;
+            }
+          }
+
+          p {
+            font-size: 1.4rem;
+          }
+
+          a {
+            margin-top: 1.5rem;
+
+            .btn {
+              background-color: #e56c58 !important;
+              border-color: #e56c58 !important;
+              color: #ffffff !important;
+              padding: 0.8rem 2rem;
+              font-size: 1.4rem;
+              font-weight: 500;
+              border-radius: 0;
+            }
+          }
+        }
+
+        .project-image-container {
+          padding-left: 8rem;
+
+          .project-image {
+            width: 25rem;
+            height: 20rem;
+          }
+        }
+      }
 
 
-.projects-section {
-  .project-card {
+
+    }
+  }
+
+  .contact-section {
     .btn {
       background-color: #e56c58 !important;
       border-color: #e56c58 !important;
-      color: #ffffff !important;
     }
-  }
-}
-
-.contact-section {
-  .btn {
-    background-color: #e56c58 !important;
-    border-color: #e56c58 !important;
   }
 }
