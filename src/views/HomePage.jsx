@@ -1,12 +1,22 @@
 // feature a short description of myself, my skills, and a link to a list of my projects that will be displayed vertically
 // at the bottom i can also quickly include my email and a button to send a message
 
-import React from 'react';
+import React, { useState } from 'react';
 import { ProjectCard } from '../components/ProjectCard.jsx';
 import placeHolderImage from '../assets/placeholder.jpeg';
 
 
 export function HomePage() {
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSendMessage = (event) => {
+        // send an email to my email (tj2002@gmail.com)
+        // then maybe show some sign of acknowledgement that a message was sent
+        setEmail('');
+        setMessage('');
+    }
+
     return (
         <div className="home-page">
             <div className="intro-section">
@@ -25,7 +35,6 @@ export function HomePage() {
                 <div className="section-heading-container">
                     <h2> My Skills </h2>
                 </div>
-
                 <div className="skills-section">
                     <div className="image-container">
                         <img src={placeHolderImage} className="portrait-image" />
@@ -53,11 +62,10 @@ export function HomePage() {
 
                 </div>
 
+                <div className="section-heading-container">
+                    <h2> Projects </h2>
+                </div>
                 <div className="projects-section">
-                    <div className="section-heading-container">
-                        <h2> Projects </h2>
-                    </div>
-
                     <ProjectCard
                         projectRole="LEAD DEVELOPER"
                         title="Project X"
@@ -71,10 +79,40 @@ export function HomePage() {
                     />
                 </div>
 
-                <div className="contact-section">
+                <div className="section-heading-container">
                     <h2> Contact Me! </h2>
-                    <p>tj2002@gmail.com</p>
-                    <button className="btn btn-primary">Send Message</button>
+                </div>
+                <div className="contact-section">
+                    <form onSubmit={handleSendMessage}>
+                        <div className="form-group">
+                            <label for="input-email">
+                                Your email
+                            </label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="input-email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <div className="underline" data-focused="false"/>
+                        </div>
+                        <div className="form-group">
+                            <label for="input-message">
+                                Message
+                            </label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="input-message"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                            />
+                        </div>
+                        <button type="submit" className="btn btn-primary">Send Message</button>
+                    </form>
+                    {/* instead of this section, i could maybe do a couple inputs (your email, message) that allows the user
+                    to send an email directly, followed by a "send message" button prefaced by a send message icon */}
                 </div>
             </div>
 
