@@ -95,7 +95,7 @@ export function HomePage() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
-                            <div className="underline" data-focused="false"/>
+                            <div className="underline"/>
                         </div>
                         <div className="form-group">
                             <label for="input-message">
@@ -108,11 +108,12 @@ export function HomePage() {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             />
+                            <div className="underline"/>
                         </div>
-                        <button type="submit" className="btn btn-primary">Send Message</button>
+                        <button type="submit" className="btn btn-primary">
+                            Send Message
+                        </button>
                     </form>
-                    {/* instead of this section, i could maybe do a couple inputs (your email, message) that allows the user
-                    to send an email directly, followed by a "send message" button prefaced by a send message icon */}
                 </div>
             </div>
 
