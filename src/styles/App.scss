@@ -20,6 +20,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  font-family: 'Muli';
 
   .intro-text-container {
     text-align: left;
@@ -62,7 +63,7 @@
     margin-bottom: 2rem;
 
     h2 {
-      // font type/color, etc
+      font-size: 2.3rem;
       font-weight: bold;
     }
   }
@@ -86,6 +87,7 @@
 
       .skills-badge-list {
         text-align: left;
+        font-family: 'Muli';
 
         span {
           font-size: 1.2rem;
@@ -99,8 +101,14 @@
       .short-bio-container {
         text-align: left;
 
+        h3 {
+          font-weight: bold;
+          font-size: 1.6rem;
+        }
+
         p {
           font-size: 1.2rem;
+          font-family: 'Muli';
         }
 
         a {
@@ -108,6 +116,7 @@
           font-weight: bold;
           font-size: 1.2rem;
           text-decoration: none;
+          font-family: 'Muli';
         }
       }
     }
@@ -125,6 +134,7 @@
 
         small {
           font-size: 1rem;
+          font-family: 'Muli';
         }
       }
 
@@ -136,9 +146,14 @@
           display: flex;
           flex-direction: column;
 
+          h3 {
+            font-weight: bold;
+          }
+
           .project-skills-badge-list {
             span {
               font-size: 0.8rem;
+              font-family: 'Muli';
               margin: 0 0.1rem 1rem;
               border-radius: 0 !important;
             }
@@ -146,6 +161,7 @@
 
           p {
             font-size: 1.4rem;
+            font-family: 'Muli';
           }
 
           a {
@@ -155,10 +171,11 @@
               background-color: #e56c58 !important;
               border-color: #e56c58 !important;
               color: #ffffff !important;
-              padding: 0.8rem 2rem;
+              padding: 0.8rem 1.8rem;
               font-size: 1.4rem;
-              font-weight: 500;
+              font-weight: bold;
               border-radius: 0;
+              font-family: 'Muli';
             }
           }
         }
@@ -178,13 +195,27 @@
     }
   }
 
+  .contact-heading-container {
+    margin: 1rem 10rem;
+    h2 {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+
   .contact-section {
+    margin: 0 10rem;
+
     form {
       display: flex;
       flex-direction: column;
 
       .form-group {
         text-align: left;
+        
+        label {
+          font-family: 'Muli';
+        }
 
         input {
           border-radius: 0;
@@ -200,7 +231,7 @@
 
         .underline {
           height: 2px;
-          margin-bottom: 2rem;
+          margin-bottom: 3rem;
           background: linear-gradient(to left, #c2c2c2 50%, black 50%);
           background-size: 200%;
           background-position: right bottom;
@@ -217,13 +248,14 @@
         border-color: #e56c58 !important;
         border-radius: 0;
         align-self: flex-start;
-        font-size: 1.2rem;
-        font-weight: 500;
-        
+        font-size: 1.4rem;
+        font-weight: bold;
+        font-family: 'Muli';
+
         display: flex;
         align-items: center;
-        padding: 0.6rem 1.4rem;
-        
+        padding: 0.8rem 1.6rem;
+
         .react-icons {
           margin-right: 0.3em;
         }

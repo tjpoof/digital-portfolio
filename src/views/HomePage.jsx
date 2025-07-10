@@ -81,7 +81,7 @@ export function HomePage() {
                     />
                 </div>
 
-                <div className="section-heading-container">
+                <div className="section-heading-container contact-heading-container">
                     <h2> Contact Me! </h2>
                 </div>
                 <div className="contact-section">
