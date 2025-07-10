@@ -28,16 +28,19 @@
 
     h1 {
       font-size: 4rem;
-
     }
 
     .contact-buttons {
       color: #bb5c4e;
       margin: 1rem 0;
 
-      .bi {
+      .react-icons {
         font-size: 2rem;
         margin-right: 1rem;
+      }
+
+      .react-icons:hover {
+        color: #c2c2c2;
       }
     }
 
@@ -214,8 +217,16 @@
         border-color: #e56c58 !important;
         border-radius: 0;
         align-self: flex-start;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: 500;
+        
+        display: flex;
+        align-items: center;
+        padding: 0.6rem 1.4rem;
+        
+        .react-icons {
+          margin-right: 0.3em;
+        }
       }
     }
 

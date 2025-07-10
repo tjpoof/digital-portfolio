@@ -4,7 +4,9 @@
 import React, { useState } from 'react';
 import { ProjectCard } from '../components/ProjectCard.jsx';
 import placeHolderImage from '../assets/placeholder.jpeg';
-
+import { IoMdSend } from "react-icons/io";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { AiFillMail } from "react-icons/ai";
 
 export function HomePage() {
     const [email, setEmail] = useState('');
@@ -23,11 +25,11 @@ export function HomePage() {
                 <div className="intro-text-container">
                     <h1> Hi, I'm TJ | Software Engineer</h1>
                     <div className="contact-buttons">
-                        <i class="bi bi-github"></i>
-                        <i class="bi bi-linkedin"></i>
-                        <i class="bi bi-envelope-at-fill"></i>
+                        <BsLinkedin className="react-icons"/>
+                        <BsGithub className="react-icons"/>
+                        <AiFillMail className="react-icons"/>
                     </div>
-                    <p> I love experimenting with new tech 🧪 I'm always willing to learn 🎓 and I may have a parasocial relationship with baseball ⚾</p>
+                    <p> I love messing around with new tech 🧪 I'm always willing to learn 🎓 and I may have a parasocial relationship with baseball ⚾</p>
                 </div>
             </div>
 
@@ -111,6 +113,7 @@ export function HomePage() {
                             <div className="underline"/>
                         </div>
                         <button type="submit" className="btn btn-primary">
+                            <IoMdSend className="react-icons"/>
                             Send Message
                         </button>
                     </form>
