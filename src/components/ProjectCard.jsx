@@ -19,11 +19,14 @@ export function ProjectCard({ projectRole, title, skills, description, image, li
                         ))}
                     </div>
                     <p>{description}</p>
-                    <a href={link}>
-                        <button className="btn">
-                            View Project
-                        </button>
-                    </a>
+                    <div className="button-container">
+                        <div className="button-outline-box"/>
+                        <a href={link}>
+                            <button className="btn">
+                                View Project
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
 
