@@ -64,7 +64,7 @@ export function HomePage() {
 
                 </div>
 
-                <div className="section-heading-container">
+                <div className="section-heading-container" id="projects">
                     <h2> Projects </h2>
                 </div>
                 <div className="projects-section">
@@ -99,7 +99,7 @@ export function HomePage() {
                     />
                 </div>
 
-                <div className="section-heading-container contact-heading-container">
+                <div className="section-heading-container contact-heading-container" id="contact">
                     <h2> Contact Me! </h2>
                 </div>
                 <div className="contact-section">

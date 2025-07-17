@@ -14,36 +14,38 @@
   flex-direction: column;
 
   .name-container {
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 
     a {
       text-decoration: none;
       color: #ffffff;
-      font-weight: bold;
+      font-weight: 500;
     }
   }
 
   .navbar-nav {
     .nav-item {
-      margin: 0 5rem; 
-      font-weight: bold;
-      border-bottom: 5px solid #e56c58;
-      transition: border-bottom .2s ease-in-out;
+      margin: 0 8rem;
+      font-weight: 500;
 
       .nav-link {
         color: #ffffff !important;
         transition: color 0.3s ease;
+
+        span {
+          border-bottom: 5px solid #e56c58;
+          transition: border-bottom .2s ease-in-out;
+        }
+
+        span:hover {
+          border-bottom-color: #d55e4c;
+        }
       }
 
       .nav-link:hover {
         color: #c2c2c2 !important;
       }
     }
-
-    .nav-item:hover {
-      border-bottom-color: #d55e4c;
-    }
-
   }
 }
 
@@ -197,7 +199,7 @@
             font-size: 1.4rem;
             font-family: 'Muli';
           }
-          
+
           .button-container {
             position: relative;
             margin-top: 1.5rem;
@@ -254,6 +256,7 @@
 
   .contact-heading-container {
     margin: 1rem 10rem;
+
     h2 {
       font-weight: bold;
       font-size: 2rem;
@@ -269,7 +272,7 @@
 
       .form-group {
         text-align: left;
-        
+
         label {
           font-family: 'Muli';
         }
