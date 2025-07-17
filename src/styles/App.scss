@@ -10,6 +10,41 @@
 .navbar {
   background-color: #141e27 !important;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  .name-container {
+    margin-bottom: 1rem; 
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin: 0 5rem; 
+      font-weight: bold;
+      border-bottom: 5px solid #e56c58;
+      transition: border-bottom .2s ease-in-out;
+
+      .nav-link {
+        color: #ffffff !important;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: #c2c2c2 !important;
+      }
+    }
+
+    .nav-item:hover {
+      border-bottom-color: #d55e4c;
+    }
+
+  }
 }
 
 
