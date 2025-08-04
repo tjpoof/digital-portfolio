@@ -13,12 +13,12 @@ export function ProjectDetailsPage() {
         'geosynth': {
             title: 'GeoSynth',
             type: 'Music services',
-            skills: ['HTML', 'CSS', 'JavaScript', 'React', 'MongoDB', 'Spotify API', 'Leaflet', 'Backend Integration'],
+            stack: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Express', 'Node.js', 'Prisma', 'MongoDB', 'Spotify API', 'Leaflet'],
             shortDescription: 'A web app that recommends new music to users based on location, mood, activity, and time of day.',
             purpose: 
-                'To create an innovative music discovery platform that combines geographical data with user preferences to provide personalized music recommendations that match the user\'s current context and environment.',
+                'The goal of this web application was to create a new way of recommending music to users based on information that they provide, such as location, mood, activity, and time of day. The main feature, which is creating playlists of these songs, is handled by allowing the user to input one of each tag and hosting the playlist on Spotify to listen to and/or save. \n\n Users are also able to rate how well each song fits the tags they provided by giving an optional upvote or downvote for each tag per song. Since the songs are tied to a playlist, these ratings can only be submitted once, meaning that if a user only rates one tag for one song in a playlist, they cannot go back to rate the playlist again after they submit. \n\n Users can also request songs to be added to the song database, labeling which tags the song(s) should fall under during the process. Song requests and their statuses can be viewed in the "My Requests" page, and admins are able to review these requests in the "Moderation" page, where they can approve requests to add songs to the database or mark them as denied.',
             techStackExplanation:
-                'The primary languages used in building GeoSynth included Javascript and Typescript, using React in the frontend and Express/Node.js in the backend. MongoDB was used to manage the database of songs, playlists, user data, etc. and Prisma acted as our ORM to interact with the database. Several external plugins were used as well, such as Leaflet when building a dynamic map for users to navigate various locations.'
+                'The primary languages used in building GeoSynth included JavaScript and TypeScript, using React in the frontend and Express/Node.js in the backend. MongoDB was used to manage the database of songs, playlists, user data, etc. and Prisma acted as our ORM to interact with the database. Several external plugins were used as well, such as Leaflet when building a dynamic map for users to navigate various locations.'
             ,
             problemsThoughtProcess: 
                 'Most of the problems that were run into had to do with planning how the app would function, which was solved by creating various charts to visualize the flow of a user interaction, such as entity relationship and C4 diagrams. In the frontend, we solved most of our issues by making wireframes for the frontend to plan out how a user would navigate through the website. I was the primary contributor in making these wireframes, creating several drafts before settling on the final iteration that the site currently resembles.\n\n In the development process, I focused on the frontend, ensuring that users had a smooth experience navigating the website as well as working to integrate the backend to transfer data to and from the user, which included making API calls and ensuring that the user was authenticated through a login process. I was also behind most of the functionality regarding the frontend, with an example being the dynamic map where users are able to click on polygons drawn on a map powered by OpenStreetMap to choose a location. \n\n One problem I did run into during the development process was when showing a list of song results when a user searched for one in a search bar that connected to the Spotify API. If a song existed in our database already, it would both show that song and a copy of it from Spotify, showing potentially multiple results of the same song. On top of that, if a song was both a single and part of another album, then it would show multiple times. In order to fix these issues, I decided that if a song already exists in the database, I would mark it with a badge that showed it exists next to the title and I would only return one copy of each song in the results list.'
@@ -31,7 +31,7 @@ export function ProjectDetailsPage() {
         },
         'cyberattack-visualization-tool': {
             title: 'Cyberattack Visualization Tool',
-            skills: ['HTML', 'CSS', 'JavaScript', 'React', 'JSON', 'Chart.js', 'D3', 'Firebase'],
+            stack: ['HTML', 'CSS', 'JavaScript', 'React', 'JSON', 'Chart.js', 'D3', 'Firebase'],
             shortDescription: 'A web app that helps users visualize cyberattack data through interactive graphs, heatmaps, and tables.',
             purpose: 'To create an accessible platform for cybersecurity professionals and researchers to analyze and understand cyberattack patterns through interactive data visualizations.',
             techStackExplanation:
@@ -48,7 +48,7 @@ export function ProjectDetailsPage() {
         },
         'parking-lot-manager': {
             title: 'Parking Lot Manager',
-            skills: ['Java', 'SQL', 'Swing', 'UML'],
+            stack: ['Java', 'SQL', 'Swing', 'UML'],
             shortDescription: 'A desktop application for managing parking permits and tracking parking violations in institutional settings.',
             purpose: 'To streamline parking management for educational institutions by providing a comprehensive system for permit issuance, violation tracking, and parking pattern analysis.',
             techStackExplanation:
@@ -94,8 +94,8 @@ export function ProjectDetailsPage() {
                         <div className="column">
                             <h3>Stack</h3>
                             <ul>
-                                {(project.skills).map((skill, index) => (
-                                    <li key={index}>{skill}</li>
+                                {(project.stack).map((tech, index) => (
+                                    <li key={index}>{tech}</li>
                                 ))}
                             </ul>
                         </div>
