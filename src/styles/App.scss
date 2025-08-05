@@ -155,6 +155,12 @@
           text-decoration: none;
           font-family: 'Muli';
         }
+
+        a:hover {
+          color: #b75646 !important;
+        }
+
+
       }
     }
   }
@@ -235,6 +241,11 @@
 
             &:hover a {
               transform: translate(0.5rem, 0.5rem);
+
+              .btn {
+                background-color: #b75646 !important;
+                color: #e5e5e5 !important;
+              }
             }
           }
         }
@@ -339,6 +350,8 @@
 
         &:hover .btn {
           transform: translate(0.5rem, 0.5rem);
+          background-color: #b75646 !important;
+          color: #e5e5e5 !important;
         }
       }
     }
@@ -377,6 +390,10 @@
             text-decoration: none;
             color: #e56c58 !important;
             font-weight: bold;
+          }
+
+          a:hover {
+            color: #b75646 !important;
           }
         }
       }
