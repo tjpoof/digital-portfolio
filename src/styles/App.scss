@@ -363,10 +363,21 @@
       .column {
         margin-right: 9rem;
 
+        h3 {
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+
         ul {
           list-style-type: none;
           padding-left: 0;
           font-family: 'Muli';
+
+          a {
+            text-decoration: none;
+            color: #e56c58 !important;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -376,13 +387,6 @@
       font-weight: bold;
       margin-bottom: 1.5rem;
       color: #141e27;
-    }
-
-    h3 {
-      font-size: 1.6rem;
-      font-weight: bold;
-      margin: 1.5rem 0 1rem 0;
-      color: #e56c58;
     }
 
     p {
