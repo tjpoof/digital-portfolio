@@ -79,7 +79,7 @@ export function HomePage() {
                         link="/projects/geosynth"
                     />
                     <ProjectCard
-                        projectRole="TEAM LEAD / FRONTEND DEVELOPER"
+                        projectRole="FRONTEND DEVELOPER"
                         title="Cyberattack Visualization Tool"
                         skills={["HTML", "CSS", "JavaScript", "React", "JSON", "Chart.js", "D3", "Firebase"]}
                         description="I worked with a team of three developers to create a web app that helps users visualize cyberattack
