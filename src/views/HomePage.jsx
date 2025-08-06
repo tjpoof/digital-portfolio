@@ -53,6 +53,7 @@ export function HomePage() {
                             <span class="badge bg-dark">SQL</span>
                             <span class="badge bg-dark">MongoDB</span>
                             <span class="badge bg-dark">React</span>
+                            <span class="badge bg-dark">Git</span>
                         </div>
 
                         <div className="short-bio-container">
