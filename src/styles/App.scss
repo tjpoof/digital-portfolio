@@ -309,7 +309,7 @@
           transition: background-position 0.4s ease-out;
         }
 
-        input:focus+.underline {
+        input:focus~.underline {
           background-position: left bottom;
         }
       }

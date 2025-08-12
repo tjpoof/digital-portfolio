@@ -110,7 +110,7 @@ export function HomePage() {
                                 Your email
                             </label>
                             <input
-                                type="text"
+                                type="email"
                                 className="form-control"
                                 id="input-email"
                                 value={email}
