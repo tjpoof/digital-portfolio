@@ -26,8 +26,8 @@ export function ProjectDetailsPage() {
             lessonsLearned: 
                 'Over the course of the development process, I gained a ton of experience when it comes to acting as a team lead; prior to this project, I had not taken the role entirely as I have really only worked in groups where each member is truly equal. In this project, each member had their own distinct responsibilities, such as acting as the testing or security lead. On top of that, I learned a lot more in planning out applications, as developing is not just the act of coding; I ended up giving more care in making sure what I create is as user-friendly as possible.'
             ,
-            githubLink: 'https://github.com/yourusername/geosynth',
-            liveDemo: 'https://geosynth-demo.com'
+            githubLink: null, // need to set both repositories to public still
+            liveDemo: null // need to host somewhere still
         },
         'cyberattack-visualization-tool': {
             title: 'Cyberattack Visualization Tool',
@@ -43,24 +43,24 @@ export function ProjectDetailsPage() {
             lessonsLearned: 
                 'Beyond just gaining experience building a website with a team, I primarily learned from this experience to really think about who I plan to work with, as one of my teammates relied on ChatGPT for most of their contributions, which did halt the development process a fair bit. Going forward, I made sure to work with people I knew I could trust to get work done while knowing what they are doing. For the record, I am not against using AI for developing, but it does get to a point where if you end up trying to connect a Python script to a JavaScript/React application then you do need to rethink what you are doing.'
             ,
-            githubLink: 'https://github.com/yourusername/cyberattack-viz',
+            githubLink: null, // need to reupload since it exists on github classroom
             liveDemo: 'https://data-visualization-proje-aa39e.web.app/'
         },
         'parking-lot-manager': {
             title: 'Parking Lot Manager',
             stack: ['Java', 'SQL', 'Swing', 'UML'],
-            shortDescription: 'A desktop application for managing parking permits and tracking parking violations in institutional settings.',
-            purpose: 'To streamline parking management for educational institutions by providing a comprehensive system for permit issuance, violation tracking, and parking pattern analysis.',
+            shortDescription: 'A desktop application for managing parking permits and tracking parking violations for college campuses.',
+            purpose: 'To streamline parking management for educational institutions by providing a comprehensive system for issuing permits, tracking violations, and analyzing parking patterns.',
             techStackExplanation:
-                'Placeholder tech stack and explanation here'
+                'The primary languages used in the parking lot manager includes Java and SQL. The app runs entirely through Java and depends on the SQLite-JDBC jar file which has been included in the program. This file is necessary for database functionality. Some other dependencies are required for the pie chart, such as "jfreechart" and "jcommon." Beyond these dependencies, Swing is what was used in building the GUI for the application. '
             ,
             problemsThoughtProcess: 
-                'Placeholder problems and thought process discussion here'
+                'This project was the first time I have been put into a true group programming experience, so there were some initial issues regarding communication throughout the team. However, I brought up the idea of using a service such as Discord for team communications and it worked for the group flawlessly for the rest of the semester. \n\n Regarding the program itself, there were some struggles with figuring out how to communicate information from the database to the application and vice versa. Once these issues were realized, I took some responsibility in teaching some team members how SQL worked as well as referring them to some documentation regarding certain syntax, as I had taken courses that taught SQL prior. \n\n My main contributions in the app itself included the permit management section, which allowed users to add, remove, or renew permits to vehicles. I also helped in other areas when needed, but another key contribution I did make was building a UML diagram to better visualize how each class related to each other in the program, which did help the team in ensuring that no class was being forgotten.'
             ,
             lessonsLearned: 
-                'Placeholder lessons learned discussion here'
+                'As mentioned before, this project was the first time that I have ever really worked on a programming project in a group setting. Over the course of this project, I learned various lessons including how to effectively communicate with a team, knowing when to lend a hand when someone needs help or is struggling in some aspect, and figuring out how dividing up work effectively can lead to efficient programming if done properly.'
             ,
-            githubLink: 'https://github.com/yourusername/parking-manager',
+            githubLink: null, // need to reupload since it exists on github classroom
             liveDemo: null // desktop app, cannot have live demo
         }
     };
