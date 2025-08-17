@@ -29,7 +29,7 @@ export function HomePage() {
                         <BsGithub className="react-icons"/>
                         <AiFillMail className="react-icons"/>
                     </div>
-                    <p> I love messing around with new tech 🧪 I'm always willing to learn 🎓 and I may have a parasocial relationship with baseball ⚾</p>
+                    <p> I love messing around with new tech 🧪 I'm always willing to learn 🎓 and I'll never pass up a chance to talk baseball ⚾</p>
                 </div>
             </div>
 
