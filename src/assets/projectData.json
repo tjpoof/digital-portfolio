@@ -13,6 +13,7 @@
   },
   "cyberattack-visualization-tool": {
     "title": "Cyberattack Visualization Tool",
+    "type": "Data analysis services",
     "stack": ["HTML", "CSS", "JavaScript", "React", "JSON", "Chart.js", "D3", "Firebase"],
     "shortDescription": "A web app that helps users visualize cyberattack data through interactive graphs, heatmaps, and tables.",
     "purpose": "The goal of this project was to create an easy-to-use web app for users to visualize and analyze cyberattack data for educational and research purposes. \n\n Users are able to view various graphs, including a line chart to show total cyberattacks pear year, a bar chart to represent various industries affected, and a pie chart showing the distribution across industries. Users are able to select a date range as well as specific industries to filter out any unwanted data if they so desire. They are able to save these filters by generating a report and using the popout menu on the right side of the screen to load them later. \n\n Beyond the charts, there is also an interactive heatmap that shows various shades of blue to represent how often a country has been attacked, with deeper shades indicating more attacks. \n\n On top of this, users are able to view the raw data in a table format, where each attack listed includes the date, location, victim, industry affected, actor location, motive, type, sub-type, and actor data.",
@@ -24,7 +25,8 @@
   },
   "parking-lot-manager": {
     "title": "Parking Lot Manager",
-    "stack": ["Java", "SQL", "Swing", "UML"],
+    "type": "Management services",
+    "stack": ["Java", "SQL", "Swing"],
     "shortDescription": "A desktop application for managing parking permits and tracking parking violations for college campuses.",
     "purpose": "To streamline parking management for educational institutions by providing a comprehensive system for issuing permits, tracking violations, and analyzing parking patterns.",
     "techStackExplanation": "The primary languages used in the parking lot manager includes Java and SQL. The app runs entirely through Java and depends on the SQLite-JDBC jar file which has been included in the program. This file is necessary for database functionality. Some other dependencies are required for the pie chart, such as \"jfreechart\" and \"jcommon.\" Beyond these dependencies, Swing is what was used in building the GUI for the application.",
