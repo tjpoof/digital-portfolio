@@ -69,17 +69,22 @@
     }
 
     .contact-buttons {
-      color: #bb5c4e;
       margin: 1rem 0;
 
-      .react-icons {
-        font-size: 2rem;
-        margin-right: 1rem;
+      a {
+        .react-icons {
+          font-size: 2rem;
+          margin-right: 1rem;
+          color: #bb5c4e;
+        }
+
+        .react-icons:hover {
+          color: #c2c2c2;
+        }
       }
 
-      .react-icons:hover {
-        color: #c2c2c2;
-      }
+
+
     }
 
     p {

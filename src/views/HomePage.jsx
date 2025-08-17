@@ -25,9 +25,16 @@ export function HomePage() {
                 <div className="intro-text-container">
                     <h1> Hi, I'm TJ | Software Engineer</h1>
                     <div className="contact-buttons">
-                        <BsLinkedin className="react-icons"/>
-                        <BsGithub className="react-icons"/>
-                        <AiFillMail className="react-icons"/>
+                        <a href="https://www.linkedin.com/in/tjharrison0827/" target="_blank" rel="noopener noreferrer">
+                            <BsLinkedin className="react-icons"/>
+                        </a>
+                        <a href="https://github.com/tjpoof" target="_blank" rel="noopener noreferrer">
+                            <BsGithub className="react-icons"/>
+                        </a>
+                        <a href="mailto:tj2002@gmail.com">
+                            <AiFillMail className="react-icons"/>
+                        </a>
+                        
                     </div>
                     <p> I love messing around with new tech 🧪 I'm always willing to learn 🎓 and I'll never pass up a chance to talk baseball ⚾</p>
                 </div>
