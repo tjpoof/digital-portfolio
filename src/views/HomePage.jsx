@@ -7,14 +7,25 @@ import placeHolderImage from '../assets/placeholder.jpeg';
 import { IoMdSend } from "react-icons/io";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";
+import emailjs from '@emailjs/browser';
 
 export function HomePage() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
     const handleSendMessage = (event) => {
-        // send an email to my email (tj2002@gmail.com)
-        // then maybe show some sign of acknowledgement that a message was sent
+        event.preventDefault();
+        
+        // mailto URL with recipient, subject, and body
+        const subject = `Portfolio message from ${email}`;
+        const body = `From: ${email}\n\nMessage:\n${message}`;
+        
+        const mailtoUrl = `mailto:contact.tjharrison@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+        // open default mail client
+        window.open(mailtoUrl);
+        
+        // clear form
         setEmail('');
         setMessage('');
     }
