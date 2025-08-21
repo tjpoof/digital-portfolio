@@ -264,66 +264,53 @@
       margin: 1rem 10rem;
 
       h2 {
-        font-weight: bold;
-        font-size: 2rem;
+        font-family: 'Muli';
+        font-size: 3.3rem;
+        font-weight: 500 !important;
       }
     }
 
     .contact-section {
       margin: 0 10rem;
       margin-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
 
-      form {
-        display: flex;
-        flex-direction: column;
+      .email-container {
+        position: relative;
+        align-self: flex-start;
 
-        .form-group {
-          text-align: left;
-
-          label {
-            font-family: 'Muli';
-          }
-
-          input {
-            border-radius: 0;
-            border: none;
-            background-color: #f2f2f2;
-          }
-
-          input:focus {
-            border-style: none;
-            outline: none;
-            box-shadow: none;
-          }
-
-          .underline {
-            height: 2px;
-            margin-bottom: 3rem;
-            background: linear-gradient(to left, #c2c2c2 50%, black 50%);
-            background-size: 200%;
-            background-position: right bottom;
-            transition: background-position 0.4s ease-out;
-          }
-
-          input:focus~.underline {
-            background-position: left bottom;
-          }
+        a {
+          text-decoration: none;
+          color: #e56c58 !important;
+          font-weight: bold;
+          font-family: 'Muli';
+          font-size: 1.4rem;
         }
 
-        .button-container {
-          position: relative;
-          width: fit-content;
-          align-self: flex-start;
+        a:hover {
+          color: #b75646 !important;
+        }
+      }
 
-          .button-outline-box {
-            position: absolute;
-            top: 0.5rem;
-            left: 0.5rem;
-            width: 100%;
-            height: 100%;
-            border: 2px solid #000;
-            z-index: 1;
-          }
+      .button-container {
+        position: relative;
+        width: fit-content;
+        align-self: flex-start;
+        margin-top: 2rem;
+
+        .button-outline-box {
+          position: absolute;
+          top: 0.5rem;
+          left: 0.5rem;
+          width: 100%;
+          height: 100%;
+          border: 2px solid #000;
+          z-index: 1;
+        }
+
+        a {
+          text-decoration: none;
 
           .btn {
             position: relative;
@@ -351,6 +338,7 @@
           }
         }
       }
+
 
 
     }
@@ -502,11 +490,12 @@
     color: white;
     font-weight: 500;
     font-size: 1.5rem;
-    
+
     .nav-link {
       display: flex;
       flex-direction: column;
     }
+
     .nav-link:hover {
       cursor: pointer;
     }
@@ -559,5 +548,5 @@
     }
   }
 
-  
+
 }

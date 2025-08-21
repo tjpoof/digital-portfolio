@@ -15,16 +15,16 @@ export function HomePage() {
 
     const handleSendMessage = (event) => {
         event.preventDefault();
-        
+
         // mailto URL with recipient, subject, and body
         const subject = `Portfolio message from ${email}`;
         const body = `From: ${email}\n\nMessage:\n${message}`;
-        
+
         const mailtoUrl = `mailto:contact.tjharrison@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
+
         // open default mail client
         window.open(mailtoUrl);
-        
+
         // clear form
         setEmail('');
         setMessage('');
@@ -37,13 +37,13 @@ export function HomePage() {
                     <h1> Hi, I'm TJ | Software Engineer</h1>
                     <div className="contact-buttons">
                         <a href="https://www.linkedin.com/in/tjharrison0827/" target="_blank" rel="noopener noreferrer">
-                            <BsLinkedin className="react-icons"/>
+                            <BsLinkedin className="react-icons" />
                         </a>
                         <a href="https://github.com/tjpoof" target="_blank" rel="noopener noreferrer">
-                            <BsGithub className="react-icons"/>
+                            <BsGithub className="react-icons" />
                         </a>
                         <a href="mailto:contact.tjharrison@gmail.com">
-                            <AiFillMail className="react-icons"/>
+                            <AiFillMail className="react-icons" />
                         </a>
                     </div>
                     <p> I love messing around with new tech 🧪 I'm always willing to learn 🎓 and I'll never pass up a chance to talk baseball ⚾</p>
@@ -118,44 +118,21 @@ export function HomePage() {
                 </div>
 
                 <div className="section-heading-container contact-heading-container" id="contact">
-                    <h2> Contact Me! </h2>
+                    <h2> Send me a message! </h2>
                 </div>
                 <div className="contact-section">
-                    <form onSubmit={handleSendMessage}>
-                        <div className="form-group">
-                            <label for="input-email">
-                                Your email
-                            </label>
-                            <input
-                                type="email"
-                                className="form-control"
-                                id="input-email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                            <div className="underline"/>
-                        </div>
-                        <div className="form-group">
-                            <label for="input-message">
-                                Message
-                            </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                id="input-message"
-                                value={message}
-                                onChange={(e) => setMessage(e.target.value)}
-                            />
-                            <div className="underline"/>
-                        </div>
-                        <div className="button-container">
-                            <div className="button-outline-box"/>
+                    <div className="email-container">
+                        <a href="mailto:contact.tjharrison@gmail.com">contact.tjharrison@gmail.com</a>
+                    </div>
+                    <div className="button-container">
+                        <div className="button-outline-box" />
+                        <a href="mailto:contact.tjharrison@gmail.com">
                             <button type="submit" className="btn btn-primary">
-                                <IoMdSend className="react-icons"/>
+                                <IoMdSend className="react-icons" />
                                 Send Message
                             </button>
-                        </div>
-                    </form>
+                        </a>
+                    </div>
                 </div>
             </div>
 
