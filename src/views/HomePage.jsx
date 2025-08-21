@@ -34,7 +34,6 @@ export function HomePage() {
                         <a href="mailto:tj2002@gmail.com">
                             <AiFillMail className="react-icons"/>
                         </a>
-                        
                     </div>
                     <p> I love messing around with new tech 🧪 I'm always willing to learn 🎓 and I'll never pass up a chance to talk baseball ⚾</p>
                 </div>
