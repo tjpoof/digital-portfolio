@@ -42,7 +42,7 @@ export function HomePage() {
                         <a href="https://github.com/tjpoof" target="_blank" rel="noopener noreferrer">
                             <BsGithub className="react-icons"/>
                         </a>
-                        <a href="mailto:tj2002@gmail.com">
+                        <a href="mailto:contact.tjharrison@gmail.com">
                             <AiFillMail className="react-icons"/>
                         </a>
                     </div>
