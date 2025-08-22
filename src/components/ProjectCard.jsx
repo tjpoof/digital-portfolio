@@ -1,5 +1,4 @@
 // these cards will be displayed in the home page's project section
-import placeHolderImage from '../assets/placeholder.jpeg';
 
 export function ProjectCard({ projectRole, title, skills, description, image, link }) {
     return (
@@ -31,7 +30,9 @@ export function ProjectCard({ projectRole, title, skills, description, image, li
 
 
                 <div className="project-image-container">
-                    <img src={placeHolderImage} className="project-image" />
+                    <a href={link}>
+                        <img src={image} className="project-image" />
+                    </a>
                 </div>
 
             </div>

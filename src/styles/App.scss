@@ -253,7 +253,14 @@
 
             .project-image {
               width: 25rem;
-              height: 20rem;
+              border-radius: 15%;
+              transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+            }
+
+            .project-image:hover {
+              transform: translateY(-30px);
+              box-shadow: 0 30px 10px rgba(0, 0, 0, 0.6);
+              filter: brightness(0.8);
             }
           }
         }

@@ -7,7 +7,9 @@ import placeHolderImage from '../assets/placeholder.jpeg';
 import { IoMdSend } from "react-icons/io";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";
-import emailjs from '@emailjs/browser';
+import geosynthProjectCover from '../assets/geosynthProjectCover.png';
+import cyberattackProjectCover from '../assets/cyberattackProjectCover.png';
+import parkingLotProjectCover from '../assets/parkingLotProjectCover.png';
 
 export function HomePage() {
     const [email, setEmail] = useState('');
@@ -93,7 +95,7 @@ export function HomePage() {
                         description="I lead a team of four developers to create a web app with the goal of recommending new music to users based
                         on various information they provide, including location, mood, activity, and time of day. Users are able to also rate how 
                         well the suggested music fit their criteria as well as request new songs to be added to the song database."
-                        image="/path/to/image.jpg"
+                        image={geosynthProjectCover}
                         link="/projects/geosynth"
                     />
                     <ProjectCard
@@ -103,7 +105,7 @@ export function HomePage() {
                         description="I worked with a team of three developers to create a web app that helps users visualize cyberattack
                         data in the form of various graphs, a heatmap, and a table view with all necessary data, including the date, location, industry affected,
                         and much more."
-                        image="/path/to/image.jpg"
+                        image={cyberattackProjectCover}
                         link="/projects/cyberattack-visualization-tool"
                     />
                     <ProjectCard
@@ -112,7 +114,7 @@ export function HomePage() {
                         skills={["Java", "SQL", "Swing", "UML"]}
                         description="I worked with a team of four developers to create a desktop app focused on managing parking permits and maintaining a database of employees, students,
                         cars, parking areas, and assigned permits in order to track parking patterns as well as manage parking violations and permits."
-                        image="/path/to/image.jpg"
+                        image={parkingLotProjectCover}
                         link="/projects/parking-lot-manager"
                     />
                 </div>
