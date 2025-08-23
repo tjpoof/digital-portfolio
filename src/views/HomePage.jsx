@@ -113,7 +113,7 @@ export function HomePage() {
                         title="Parking Lot Manager"
                         skills={["Java", "SQL", "Swing", "UML"]}
                         description="I worked with a team of four developers to create a desktop app focused on managing parking permits and maintaining a database of employees, students,
-                        cars, parking areas, and assigned permits in order to track parking patterns as well as manage parking violations and permits."
+                        cars, parking areas, and assigned permits in order to track parking patterns as well as managing parking violations and permits."
                         image={parkingLotProjectCover}
                         link="/projects/parking-lot-manager"
                     />
