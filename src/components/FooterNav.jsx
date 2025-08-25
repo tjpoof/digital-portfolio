@@ -40,44 +40,46 @@ export function FooterNav() {
 
     return (
         <footer className="footer-nav">
-            <div className="footer-container footer-name-container">
-                <a className="nav-link" onClick={handleHomeNav}>
-                    <span className="first-name">Thomas</span>
-                    <span className="last-name">Harrison</span>
-                </a>
-            </div>
-            <div className="footer-container footer-links-container">
-                <h4>Links</h4>
-                <ul>
-                    <li>
-                        <a className="nav-link" onClick={handleAboutNav}>
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a className="nav-link" onClick={handleProjectsNav}>
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a className="nav-link" onClick={handleContactNav}>
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div className="footer-container footer-contact-links-container">
-                <h4>Get in touch</h4>
-                <div className="contact-buttons">
-                    <a href="https://www.linkedin.com/in/tjharrison0827/" target="_blank" rel="noopener noreferrer">
-                        <BsLinkedin className="react-icons" />
+            <div className="footer-content-wrapper">
+                <div className="footer-container footer-name-container">
+                    <a className="nav-link" onClick={handleHomeNav}>
+                        <span className="first-name">Thomas</span>
+                        <span className="last-name">Harrison</span>
                     </a>
-                    <a href="https://github.com/tjpoof" target="_blank" rel="noopener noreferrer">
-                        <BsGithub className="react-icons" />
-                    </a>
-                    <a href="mailto:contact.tjharrison@gmail.com">
-                        <AiFillMail className="react-icons" />
-                    </a>
+                </div>
+                <div className="footer-container footer-links-container">
+                    <h4>Links</h4>
+                    <ul>
+                        <li>
+                            <a className="nav-link" onClick={handleAboutNav}>
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a className="nav-link" onClick={handleProjectsNav}>
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a className="nav-link" onClick={handleContactNav}>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="footer-container footer-contact-links-container">
+                    <h4>Get in touch</h4>
+                    <div className="contact-buttons">
+                        <a href="https://www.linkedin.com/in/tjharrison0827/" target="_blank" rel="noopener noreferrer">
+                            <BsLinkedin className="react-icons" />
+                        </a>
+                        <a href="https://github.com/tjpoof" target="_blank" rel="noopener noreferrer">
+                            <BsGithub className="react-icons" />
+                        </a>
+                        <a href="mailto:contact.tjharrison@gmail.com">
+                            <AiFillMail className="react-icons" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
