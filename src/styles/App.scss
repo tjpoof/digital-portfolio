@@ -49,7 +49,7 @@
 }
 
 
-.intro-section {
+.hero-section {
   background-color: #141e27;
   color: #ffffff;
   width: 100%;
@@ -58,13 +58,44 @@
   align-items: center;
   font-family: 'Muli';
 
-  .intro-text-container {
+  .hero-text-container {
     text-align: left;
     margin: 0 auto;
     width: 70rem;
 
     h1 {
       font-size: 4rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      div {
+        margin-right: 1rem;
+      }
+
+      .highlighted-text-container {
+        position: relative;
+
+        .highlight {
+          background-color: #ed6955;
+          width: 94%;
+          height: 40%;
+          position: absolute;
+          bottom: 0;
+          left: 0.3rem;
+          z-index: 1;
+          transform-origin: left center;
+        }
+
+        // this makes text appear above the highlight
+        &>* {
+          position: relative;
+          z-index: 2;
+        }
+
+        &:hover .highlight {
+          animation: shrinkExpand 0.4s ease-in-out;
+        }
+      }
     }
 
     .contact-buttons {
@@ -102,6 +133,37 @@
       h2 {
         font-size: 2.3rem;
         font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        div {
+          margin-right: 0.6rem;
+        }
+
+        .highlighted-text-container {
+          position: relative;
+
+          .highlight {
+            background-color: #ed6955;
+            width: 93%;
+            height: 50%;
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0.3rem;
+            z-index: 1;
+            transform-origin: left center;
+          }
+
+          // this makes text appear above the highlight
+          &>* {
+            position: relative;
+            z-index: 2;
+          }
+
+          &:hover .highlight {
+            animation: shrinkExpand 0.4s ease-in-out;
+          }
+        }
       }
     }
 
@@ -556,4 +618,19 @@
   }
 
 
+}
+
+// keyframe for highlight effect on certain headings
+@keyframes shrinkExpand {
+  0% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    transform: scaleX(0.4);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
 }

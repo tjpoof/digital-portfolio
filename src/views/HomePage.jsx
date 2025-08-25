@@ -34,9 +34,23 @@ export function HomePage() {
 
     return (
         <div className="home-page">
-            <div className="intro-section">
-                <div className="intro-text-container">
-                    <h1> Hi, I'm TJ | Software Engineer</h1>
+            <div className="hero-section">
+                <div className="hero-text-container">
+                    <h1> 
+                        <div>Hi,</div>
+                        <div>I'm</div>
+                        <div>TJ</div>
+                        <div>|</div>
+                        <div className="highlighted-text-container">
+                            <div>Software</div>
+                            <div className="highlight"></div>
+                        </div>
+                        <div className="highlighted-text-container">
+                            <div>Engineer</div>
+                            <div className="highlight"></div>
+                        </div>
+                        
+                    </h1>
                     <div className="contact-buttons">
                         <a href="https://www.linkedin.com/in/tjharrison0827/" target="_blank" rel="noopener noreferrer">
                             <BsLinkedin className="react-icons" />
@@ -54,7 +68,13 @@ export function HomePage() {
 
             <div className="body-section">
                 <div className="section-heading-container">
-                    <h2> My Skills </h2>
+                    <h2> 
+                        <div>My</div>
+                        <div className="highlighted-text-container">
+                            <div>Skills</div>
+                            <div className="highlight"></div>
+                        </div> 
+                    </h2>
                 </div>
                 <div className="skills-section">
                     <div className="image-container">
@@ -85,7 +105,12 @@ export function HomePage() {
                 </div>
 
                 <div className="section-heading-container" id="projects">
-                    <h2> Projects </h2>
+                    <h2> 
+                        <div className="highlighted-text-container">
+                            <div>Projects</div>
+                            <div className="highlight"></div>
+                        </div> 
+                    </h2>
                 </div>
                 <div className="projects-section">
                     <ProjectCard
@@ -120,7 +145,15 @@ export function HomePage() {
                 </div>
 
                 <div className="section-heading-container contact-heading-container" id="contact">
-                    <h2> Send me a message! </h2>
+                    <h2> 
+                        <div>Send</div>
+                        <div>me</div> 
+                        <div>a</div> 
+                        <div className="highlighted-text-container">
+                            <div>message!</div>
+                            <div className="highlight"></div>
+                        </div> 
+                    </h2>
                 </div>
                 <div className="contact-section">
                     <div className="email-container">
