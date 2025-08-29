@@ -39,8 +39,7 @@ export function HomePage() {
                     <h1> 
                         <div>Hi,</div>
                         <div>I'm</div>
-                        <div>TJ</div>
-                        <div>|</div>
+                        <div>TJ |</div>
                         <div className="highlighted-text-container">
                             <div>Software</div>
                             <div className="highlight"></div>
