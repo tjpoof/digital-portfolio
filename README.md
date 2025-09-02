@@ -11,17 +11,17 @@ To get started, clone the repository and install the dependencies.
 git clone https://github.com/tjpoof/digital-portfolio.git
 ```
 
-# Navigate into the project directory
 ```bash
+# Navigate into the project directory
 cd devPortfolio
 ```
 
-# Install dependencies
 ```bash
+# Install dependencies
 npm install
 ```
 
-# Start the development server
 ```bash
+# Start the development server
 npm run dev
 ```
