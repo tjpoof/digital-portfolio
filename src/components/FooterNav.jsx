@@ -5,6 +5,7 @@ import { AiFillMail } from "react-icons/ai";
 
 export function FooterNav() {
     const navigate = useNavigate();
+    const mailtoUrl = `mailto:contact.tjharrison@gmail.com?subject=${encodeURIComponent(`Portfolio message`)}`;
 
     const handleContactNav = (e) => {
         e.preventDefault();
@@ -76,7 +77,7 @@ export function FooterNav() {
                         <a href="https://github.com/tjpoof" target="_blank" rel="noopener noreferrer">
                             <BsGithub className="react-icons" />
                         </a>
-                        <a href="mailto:contact.tjharrison@gmail.com">
+                        <a href={mailtoUrl}>
                             <AiFillMail className="react-icons" />
                         </a>
                     </div>

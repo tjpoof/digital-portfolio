@@ -12,31 +12,13 @@ import cyberattackProjectCover from '../assets/cyberattackProjectCover.png';
 import parkingLotProjectCover from '../assets/parkingLotProjectCover.png';
 
 export function HomePage() {
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleSendMessage = (event) => {
-        event.preventDefault();
-
-        // mailto URL with recipient, subject, and body
-        const subject = `Portfolio message from ${email}`;
-        const body = `From: ${email}\n\nMessage:\n${message}`;
-
-        const mailtoUrl = `mailto:contact.tjharrison@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-        // open default mail client
-        window.open(mailtoUrl);
-
-        // clear form
-        setEmail('');
-        setMessage('');
-    }
+    const mailtoUrl = `mailto:contact.tjharrison@gmail.com?subject=${encodeURIComponent(`Portfolio message`)}`;
 
     return (
         <div className="home-page">
             <div className="hero-section">
                 <div className="hero-text-container">
-                    <h1> 
+                    <h1>
                         <div>Hi,</div>
                         <div>I'm</div>
                         <div>TJ |</div>
@@ -48,7 +30,7 @@ export function HomePage() {
                             <div>Engineer</div>
                             <div className="highlight"></div>
                         </div>
-                        
+
                     </h1>
                     <div className="contact-buttons">
                         <a href="https://www.linkedin.com/in/tjharrison0827/" target="_blank" rel="noopener noreferrer">
@@ -57,7 +39,7 @@ export function HomePage() {
                         <a href="https://github.com/tjpoof" target="_blank" rel="noopener noreferrer">
                             <BsGithub className="react-icons" />
                         </a>
-                        <a href="mailto:contact.tjharrison@gmail.com">
+                        <a href={mailtoUrl}>
                             <AiFillMail className="react-icons" />
                         </a>
                     </div>
@@ -67,12 +49,12 @@ export function HomePage() {
 
             <div className="body-section">
                 <div className="section-heading-container">
-                    <h2> 
+                    <h2>
                         <div>My</div>
                         <div className="highlighted-text-container">
                             <div>Skills</div>
                             <div className="highlight"></div>
-                        </div> 
+                        </div>
                     </h2>
                 </div>
                 <div className="skills-section">
@@ -104,11 +86,11 @@ export function HomePage() {
                 </div>
 
                 <div className="section-heading-container" id="projects">
-                    <h2> 
+                    <h2>
                         <div className="highlighted-text-container">
                             <div>Projects</div>
                             <div className="highlight"></div>
-                        </div> 
+                        </div>
                     </h2>
                 </div>
                 <div className="projects-section">
@@ -116,7 +98,7 @@ export function HomePage() {
                         projectRole="TEAM LEAD / FRONTEND DEVELOPER"
                         title="GeoSynth"
                         skills={["HTML", "CSS", "JavaScript", "React", "MongoDB", "Spotify API", "Leaflet", "Backend Integration"]}
-                        description="I lead a team of four developers to create a web app with the goal of recommending new music to users based
+                        description="I led a team of four developers to create a web app with the goal of recommending new music to users based
                         on various information they provide, including location, mood, activity, and time of day. Users are able to also rate how 
                         well the suggested music fit their criteria as well as request new songs to be added to the song database."
                         image={geosynthProjectCover}
@@ -144,23 +126,23 @@ export function HomePage() {
                 </div>
 
                 <div className="section-heading-container contact-heading-container" id="contact">
-                    <h2> 
+                    <h2>
                         <div>Send</div>
-                        <div>me</div> 
-                        <div>a</div> 
+                        <div>me</div>
+                        <div>a</div>
                         <div className="highlighted-text-container">
                             <div>message!</div>
                             <div className="highlight"></div>
-                        </div> 
+                        </div>
                     </h2>
                 </div>
                 <div className="contact-section">
                     <div className="email-container">
-                        <a href="mailto:contact.tjharrison@gmail.com">contact.tjharrison@gmail.com</a>
+                        <a href={mailtoUrl}>contact.tjharrison@gmail.com</a>
                     </div>
                     <div className="button-container">
                         <div className="button-outline-box" />
-                        <a href="mailto:contact.tjharrison@gmail.com">
+                        <a href={mailtoUrl}>
                             <button type="submit" className="btn btn-primary">
                                 <IoMdSend className="react-icons" />
                                 Send Message
