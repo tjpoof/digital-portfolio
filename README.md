@@ -13,7 +13,7 @@ git clone https://github.com/tjpoof/digital-portfolio.git
 
 ```bash
 # Navigate into the project directory
-cd devPortfolio
+cd digital-portfolio
 ```
 
 ```bash
