@@ -10,6 +10,7 @@ import { AiFillMail } from "react-icons/ai";
 import geosynthProjectCover from '../assets/geosynthProjectCover.png';
 import cyberattackProjectCover from '../assets/cyberattackProjectCover.png';
 import parkingLotProjectCover from '../assets/parkingLotProjectCover.png';
+import stktileProjectCover from '../assets/stktileProjectCover.png';
 
 export function HomePage() {
     const mailtoUrl = `mailto:contact.tjharrison@gmail.com?subject=${encodeURIComponent(`Portfolio message`)}`;
@@ -94,6 +95,16 @@ export function HomePage() {
                     </h2>
                 </div>
                 <div className="projects-section">
+                    <ProjectCard
+                        projectRole="PERSONAL PROJECT"
+                        title="STK Tile & Stone"
+                        skills={["HTML", "CSS", "JavaScript", "React"]}
+                        description="Worked with my uncle and father to build a website to showcase my uncle’s services as a tile installation expert 
+                        in the area of Milton, FL and surrounding areas. I revised the web app as needed based on feedback from my uncle. Users are able 
+                        to view the various services STK Tile provides as well as reviews, past work, and are able to get in contact via email or phone."
+                        image={stktileProjectCover}
+                        link="/projects/stktile"
+                    />
                     <ProjectCard
                         projectRole="TEAM LEAD / FRONTEND DEVELOPER"
                         title="GeoSynth"

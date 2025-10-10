@@ -46,13 +46,13 @@ export function ProjectDetailsPage() {
                         <div className="column">
                             <h3>Code</h3>
                             <ul>
-                                <li><a href={project.githubLink}>Github</a></li>
+                                <li><a href={project.githubLink} target="_blank" rel="noopener noreferrer">Github</a></li>
                             </ul>
                         </div>
                         <div className="column">
                             <h3>Live</h3>
                             <ul>
-                                <li><a href={project.liveDemo}>Site</a></li>
+                                <li><a href={project.liveDemo} target="_blank" rel="noopener noreferrer">Site</a></li>
                             </ul>
                         </div>
                     </div>
