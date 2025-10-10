@@ -7,7 +7,7 @@ export function AboutPage() {
                 <h1>I've always loved tech</h1>
 
                 <div className="resume-container">
-                    <p>Looking for my <a href="">resume</a>?</p>
+                    <p>Looking for my <a href="https://drive.google.com/file/d/1ljWgxQwGcHNUSwOZYWxT6xC6Pk0fVWlQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">resume</a>?</p>
                 </div>
                 <div className="story-container">
                     <h3>My quick story</h3>
