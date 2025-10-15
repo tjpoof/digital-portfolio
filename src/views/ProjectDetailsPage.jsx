@@ -49,12 +49,14 @@ export function ProjectDetailsPage() {
                                 <li><a href={project.githubLink} target="_blank" rel="noopener noreferrer">Github</a></li>
                             </ul>
                         </div>
-                        <div className="column">
-                            <h3>Live</h3>
-                            <ul>
-                                <li><a href={project.liveDemo} target="_blank" rel="noopener noreferrer">Site</a></li>
-                            </ul>
-                        </div>
+                        {project.liveDemo && (
+                            <div className="column">
+                                <h3>Live</h3>
+                                <ul>
+                                    <li><a href={project.liveDemo} target="_blank" rel="noopener noreferrer">Site</a></li>
+                                </ul>
+                            </div>
+                        )}
                     </div>
                 </div>
 
