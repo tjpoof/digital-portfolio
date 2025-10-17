@@ -11,8 +11,8 @@ export function AboutPage() {
                 </div>
                 <div className="story-container">
                     <h3>My quick story</h3>
-                    <p><strong>Ever since I was ten years old, working with technology has been my passion.</strong> Whether it be image or video editing, programming, or just enjoying video games, technology has stuck with me for as long as I can remember. Through modding video games, such as Minecraft, I found that I enjoyed programming things, which led me to pursue a computer science degree with the Hal Marcus College of Science and Engineering at the University of West Florida. </p>
-                    <p>Over the course of those four years, I discovered that I had a passion for web development, as it combined both my love for designing and programming things. This especially came to fruition during the development process of my group capstone project, <a href="/projects/geosynth">GeoSynth</a>, where I took on the role of being the team lead and primary frontend developer.</p>
+                    <p><strong>Ever since I was seven years old, working with technology has been my passion.</strong> Whether it be image or video editing, programming, or just enjoying video games, technology has stuck with me for as long as I can remember. Through modding video games, such as Minecraft, I found that I enjoyed programming, which led me to pursue a computer science degree with the Hal Marcus College of Science and Engineering at the University of West Florida. </p>
+                    <p>Over the course of those four years, I discovered that I had a passion for web development, as it combined both my love for designing and programming. This especially came to fruition during the development process of my group capstone project, <a href="/projects/geosynth">GeoSynth</a>, where I took on the role of being the team lead and primary frontend developer.</p>
                 </div>
                 <div className="story-container">
                     <h3>As a developer</h3>
