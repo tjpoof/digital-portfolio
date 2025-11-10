@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import { ProjectCard } from '../components/ProjectCard.jsx';
 import placeHolderImage from '../assets/placeholder.jpeg';
+import profileImage from '../assets/profile.jpg';
 import { IoMdSend } from "react-icons/io";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";
@@ -60,7 +61,7 @@ export function HomePage() {
                 </div>
                 <div className="skills-section">
                     <div className="image-container">
-                        <img src={placeHolderImage} className="portrait-image" />
+                        <img src={profileImage} className="portrait-image" />
                     </div>
 
                     <div className="skills-content-container">
