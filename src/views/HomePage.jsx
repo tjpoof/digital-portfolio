@@ -32,7 +32,6 @@ export function HomePage() {
                             <div>Engineer</div>
                             <div className="highlight"></div>
                         </div>
-
                     </h1>
                     <div className="contact-buttons">
                         <a href="https://www.linkedin.com/in/tjharrison0827/" target="_blank" rel="noopener noreferrer">
